@@ -1,28 +1,109 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Lisete retseptiblogi</title>
-<style>
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisete retseptiblogi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe5ec;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a94064;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+			font-family:'Comic Sans MS';
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffe4b5;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			display: flex;
+			flex-direction: column;
+			align-items: center; 
+        }
+
+        .recipe {
+			font-family: 'Comic Sans MS';
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffefd5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+			max-width: 700px;
+        }
+
+        .recipe h2 {
+            font-size: 24px;
+			color: #a94064;
+        }
+
+        .recipe p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .recipe img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .recipe-button {
+            background-color: #ffb6c1;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .recipe-button:hover {
+            background-color: #db7093;
+        }
+    </style>
 </head>
-<body style="background-color:#ffe5ec">
-
-<h1 style="font-size: 45px; color:#966fd6; font-family:'Comic Sans MS'">Retseptiblogi</h1>
-<hr>
-<p style="text-align:center"><img src="lretseptid.png"></p>
-
-<p style="font-size: 20px; color: purple; font-family: Verdana">Retseptiraamat</p>
-
-<p style="text-align:center; font-family: Verdana">
-    <a href="https://l1s3t3.github.io/retsept/">Sügisene banaanileib</a>
-	<br>
-	<br>
-    <a href="https://l1s3t3.github.io">Talvine leib</a>
-</p>
-<hr>
-<p style="color:purple; font-family:'Courier New'">Info: ...@....ee</p>
+<body>
+    <header>
+        <h1>Lisete retseptiblogi</h1>
+		<p style="font-family:'Verdana'">r o a s t o . e e</p>
+    </header>
+    <div class="container">
+        <div class="recipe">
+            <h2>Sügisene banaanileib</h2>
+            <img src="banaanileib.jpg" alt="Banaanileib" width="310" height="382">
+            <p>Ideaalne magus suutäis värvilisse sügisesse.</p>
+            <a href="banaanileiva_leht.html" class="recipe-button">Vaata retsepti</a>
+        </div>
+        <div class="recipe">
+            <h2>Juusturullid</h2>
+            <img src="juusturullid.jpg" alt="Juusturullid" width="341" height="256">
+            <p>Iga juustuarmastaja lemmik. Juustune ja suus sulav!</p>
+            <a href="juusturullid.html" class="recipe-button">Vaata retsepti</a>
+        </div>
+        <div class="recipe">
+            <h2>Talvine leib</h2>
+            <img src="recipe3.jpg" alt="Leib">
+            <p>Jõuluootust suurendav maitsev kodune leib.</p>
+            <a href="https://l1s3t3.github.io/retsept/" class="recipe-button">Vaata retsepti</a>
+        </div>
+    </div>
 </body>
 </html>
